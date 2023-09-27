@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jsquiz</title>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        
+    </head>
+    <body>
+        <body>
+            <!-- Header -->
+            <header>
+              <h1>Welcome to the project!</h1>
+              <div class="langSec">
+                <form>
+                    <button id="frenchBtn"><img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" class="flagImage" >Fr</button>
+                    <button id="englishBtn"><img src='https://i0.wp.com/palmerluckey.com/wp-content/uploads/2020/09/american-flag-logo-png-4.png?ssl=1' class="flagImage">En</button>
+                </form>
+              </div>
+              <p>
+                there is supose to be something here but i can't recal at the moment
+              </p>
+              <div class="upperBtn">
+                <button id="loginBtn" class="waves-effect waves-light btn">Login</button>
+                <button id="createBtn" class="waves-effect waves-light btn">Create account</button>
+              </div>
+             </header>
+        
+            <!-- Navbar -->
+            <nav class="nav-wrapper">
+                <div class="dowpDown">
+                    <button class="dropbtn">Contact 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropDownContent left hide-on-med-and-down">
+                      <a href="" class="active">Facebook</a>
+                      <a href="" class="active">Gmail</a>
+                      <a href="" class="active">Twitter</a>
+                  </div>
+                </div>
+                <div class="dowpDown">
+                    <button class="dropbtn">Game 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropDownContent">
+                    <a href="">Trivia</a>
+                    <a href="">Manetee</a>
+                  </div>
+                </div>
+                <div class="dowpDown">
+                    <button class="dropbtn">NewsPaper 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropDownContent">
+                        <a href="">Today</a>
+                        <a href="">Archive</a>
+                      </div>
+                </div>
+            </nav>
+        
+            <!-- Body -->
+            <main>
+              <!-- Sidebar -->
+              <aside>
+                <h2>When you change the screen size...</h2>
+                <p>The navbar and this sidebar will be stacked on top of each other!</p>
+                <p>
+                  And the product cards will wrap around as the screen gets smaller.
+                </p>
+              </aside>
+              <!-- Product Cards -->
+              <div class="products">
+                <section class="card">
+                  <header>Wiki</header>
+                  <input type="text" id="wikiSearch" placeholder="Please enter your location">
+                  <button id="wikiSearchBtn">Search</button>
+                </section>
+                <section class="card">
+                  <header>Dictionary</header>
+                  <img src="./800px-Merriam-Webster_logo.svg.png"  alt="webster" style="height: 250px;"/>
+                  <button id="dicBtn">Search</button>
+                </section>
+                <section class="card">
+                  <header>City</header>
+                  <input type="text" placeholder="Enter the country" id="nationLang">
+                  <button id="nationBtn">Search</button>
+                </section>
+                <section class="card">
+                  <header>Airport</header>
+                  <select id="airportSelect">
+                    <option value="ATL" id="atlOption">ATL</option>
+                    <option value="DXB" id="dxbOption">DXB</option>
+                    <option value="IST" id="istOption">IST</option>
+                    <option value="LHR" id="lhrOption">LHR</option>
+                    <option value="CDG" id="cdgOption">CDG</option>
+                    <option value="HND" id="hndOption">HND</option>
+                    <option value="MEX" id="mexOption">MEX</option>
+                  </select>
+                  <button id="airportBtn">Search</button> 
+                </section>
+              </div>
+            </main>
+            <div id="mapsAssume">
+              <button id="mapBtn">Search</button>
+            </div>
+            <div class="loginSec ">
+                <div class="input-field col s6">
+                <input type="text" id="loginUser" placeholder="UserName"><br><br>
+                <input type="text" id="loginPass" placeholder="PassWord"><br><br>
+                <button type="submit" id="entrySub" class="btn waves-effect waves-light">submit</button>
+                </div>
+            </div>
+            <div id="createSec">
+                <form class="input-field col s6" >
+                    <input type="text" placeholder="userName" id="userName"><br><br>
+                    <input type="text" placeholder="LastName" id="lastName"><br><br>
+                    <input type="password" placeholder="Password" id="createPass"><br><br>
+                    <input type="password" placeholder="repeat password" id="repeatPass"><br><br>
+                    <button type="submit" id="createSub" class="btn waves-effect waves-light">Submit</button>
+                    <div id="error-message" class="error-message"></div>
+               </form>
+            </div>
+            <div id="transDivi">
+              <input  type="text" placeholder="Search"  id="transSeacrh">
+              <button id="searchBtn">Search</button>
+            </div>
+            <div id="translationContainer"></div>
+          
+        
+        <script src="./script.js"></script>
+    </body>
+</html>
